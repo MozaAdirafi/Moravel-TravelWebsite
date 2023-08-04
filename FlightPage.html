@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/FlightStyle.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Moravel Flights</title>
+    <link rel="shortcut icon" href="images/Airplane_silhouette_blue.svg">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="LandingPage.html" id="logo"><span>Mo</span>ravel</a>
+        <img src="./images/Airplane_silhouette_blue.svg" id="logo-img"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="LandingPage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="FlightPage.html">Flights</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="HotelPage.html">Hotel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ContactPage.html">Contact</a>
+                  </li>
+              </ul>
+              <a class="btn btn-primary" href="LoginPage.html" id="logout">Logout</a>
+          </div>
+      </div>
+  </nav>
+    <header class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>Your <span class="vacation-text">Sky-High</span> Adventure Awaits</h1>
+          <p>Exclusive Offers on Hotels, Flights, and Memorable Stay Packages!.</p>
+        </div>
+        <div class="booking__container">
+          <form>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>From</label>
+              </div>
+              <p>Departure city</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>To</label>
+              </div>
+              <p>Destination city</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Departure Date</label>
+              </div>
+              <p>Select date</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Return Date</label>
+              </div>
+              <p>Select date</p>
+            </div>
+          </form>          
+          <button class="btn"><i class="ri-search-line"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container popular__container">
+      <h2 class="section__header"><span class="vacation-blue">P</span>opular Flights</h2>
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="images/eiffel_tower_paris_france-wallpaper-1920x1200 (1).jpg" alt="popular hotel">
+            <div class="card-body">
+              <h3>Paris</h3>
+              <p>France</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$499</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Add other cards similarly -->
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="images/Ulun-Danu-Beratan-in-Bedugul-Bali-Indonesia- (1).jpg" alt="popular hotel">
+            <div class="card-body">
+              <h3>Bali</h3>
+              <p>Indonesia</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h6>Price: <strong>$549</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="images/wp4645917 (1).jpg" alt="popular hotel">
+            <div class="card-body">
+              <h3>Tokyo</h3>
+              <p>Japan</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$599</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 py-3 py-md-0" style="margin-top: 30px;">
+          <div class="card">
+            <img src="images/photo-1499092346589-b9b6be3e94b2 (1).jpg" alt="popular hotel">
+            <div class="card-body">
+              <h3>New York City</h3>
+              <p>USA</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$449</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 py-3 py-md-0" style="margin-top: 30px;">
+          <div class="card">
+            <img src="images/782540 (1).jpg" alt="popular hotel">
+            <div class="card-body">
+              <h3>Cape Town</h3>
+              <p>South Africa</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$649</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 py-3 py-md-0" style="margin-top: 30px;">
+          <div class="card">
+            <img src="images/image (1) (1).jpg" alt="popular hotel">
+            <div class="card-body">
+              <h3>Sydney</h3>
+              <p>Australia</p>
+              <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h6>Price: <strong>$549</strong></h6>
+              <a href="#book">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="memories">
+      <div class="section__container memories__container">
+        <div class="memories__header">
+          <h2 class="section__header">
+            <span class="vacation-blue">T</span>ravel to make memories all around the world
+          </h2>
+        </div>
+        <div class="memories__grid">
+          <div class="memories__card">
+            <span><i class="ri-calendar-2-line"></i></span>
+            <h4>Book & relax</h4>
+            <p>
+              With "Book and Relax," you can sit back, unwind, and enjoy the
+              journey while we take care of everything else.
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-shield-check-line"></i></span>
+            <h4>Smart Checklist</h4>
+            <p>
+              Introducing Smart Checklist with us, the innovative solution
+              revolutionizing the way you travel with our airline.
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-bookmark-2-line"></i></span>
+            <h4>Save More</h4>
+            <p>
+              From discounted ticket prices to exclusive promotions and deals,
+              we prioritize affordability without compromising on quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container travellers__container">
+      <h2 class="section__header">Best travellers of the month</h2>
+      <div class="travellers__grid">
+        <div class="travellers__card">
+          <div class="traveller__mirror">
+            <img src="images/traveller-1.jpg" alt="traveller" />
+          </div>
+          <div class="travellers__card__content">
+            <div class="client__circle">
+              <img src="images/paulo-sacramento.1024x1024-1.jpg" alt="client" />
+            </div>
+            <h4>Emily Johnson</h4>
+            <p>Dubai</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <div class="traveller__mirror">
+            <img src="images/traveller-2.jpg" alt="traveller" />
+          </div>
+          <div class="travellers__card__content">
+            <div class="client__circle">
+              <img src="images/paulo-sacramento.1024x1024-1.jpg" alt="client" />
+            </div>
+            <h4>David Smith</h4>
+            <p>Paris</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <div class="traveller__mirror">
+            <img src="images/traveller-3.jpg" alt="traveller" />
+          </div>
+          <div class="travellers__card__content">
+            <div class="client__circle">
+              <img src="images/paulo-sacramento.1024x1024-1.jpg" alt="client" />
+            </div>
+            <h4>Olivia Brown</h4>
+            <p>Singapore</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <div class="traveller__mirror">
+            <img src="images/traveller-4.jpg" alt="traveller" />
+          </div>
+          <div class="travellers__card__content">
+            <div class="client__circle">
+              <img src="images/paulo-sacramento.1024x1024-1.jpg" alt="client" />
+            </div>
+            <h4>Daniel Taylor</h4>
+            <p>Malaysia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container">
+      <div class="reward__container">
+        <p>100+ discount codes</p>
+        <h4>Join rewards and discover amazing discounts on your booking</h4>
+        <button class="reward__btn">Join Rewards</button>
+      </div>
+    </section>
+
+<!-- Footer Start -->
+<footer id="footer">
+  <h1>Moravel</h1>
+  <p>Explore the world with Moravel and embark on unforgettable journeys that redefine wanderlust.</p>
+  <div class="social-links">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+</footer>
+  </body>
+</html>
